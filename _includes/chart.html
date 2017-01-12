@@ -1,0 +1,8 @@
+{% raw %}
+<div ng-app="ChartTestApp">
+  <div ng-controller="ChartTestController as vm">
+    <canvas class="chart chart-line" chart-data="vm.data" chart-options="vm.options"
+      chart-dataset-override="vm.datasetOptions"></canvas>
+  </div>
+</div>
+{% endraw %}

@@ -1,0 +1,28 @@
+---
+layout: home
+---
+
+<h1>Chart</h1>
+
+{% include chart.html %}
+
+{% capture chart_html %}
+{% include chart.html %}
+{% endcapture %}
+
+<h2>HTML</h2>
+{% highlight html %}
+{{ chart_html }}
+{% endhighlight %}
+
+<h2>JS</h2>
+{% highlight js %}
+{% include chart.js %}
+{% endhighlight %}
+</pre>
+
+<script>
+
+{% include chart.js %}
+
+</script>
